@@ -1,0 +1,12 @@
+{
+    "bandId": bandUUID,
+    "status": enum,
+    "startDate": Date,
+    "endDate": Date,
+    "cities": CityIDs[],
+    "bookings": [
+        {
+            "eventId": EventId
+        }
+    ]
+}

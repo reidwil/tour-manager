@@ -1,0 +1,12 @@
+{
+    "id": uuid,
+    "members": MemberUUID[],
+    "genre": Genre[],
+    "locationID": someshit,
+    "socials": {
+        "spotify": string,
+        "soundcloud": string,
+        "youtube": null,
+        "tidal": null
+    },
+}

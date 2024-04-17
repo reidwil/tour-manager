@@ -1,0 +1,6 @@
+{"id": EventUUID,
+    "locationID": LocationId,
+    "Date": Date,
+    // Other Event metadata
+    "Bands": BandIDs[] 
+}
