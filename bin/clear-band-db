@@ -1,0 +1,6 @@
+#!/bin/bash
+
+headers="id,name,members,genre,location_id,socials"
+
+rm db/bands.csv
+echo $headers > db/bands.csv

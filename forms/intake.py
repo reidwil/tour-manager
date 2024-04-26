@@ -1,10 +1,11 @@
-form_html = '''
+form_html = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Band Submission Form</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome for icons -->
     <style>
         body {
             background-color: #333; /* Dark background */
@@ -61,13 +62,38 @@ form_html = '''
                     {% endfor %}
                 </select>
             </div>
+            <!-- Social Media Links Section with icons -->
             <div class="form-group">
-                <label for="socials">Social Media Links (comma-separated):</label>
-                <input type="text" class="form-control" id="socials" name="socials">
+                <label><i class="fab fa-instagram icon"></i>Instagram:</label>
+                <input type="text" class="form-control" name="socials[instagram]">
+            </div>
+            <div class="form-group">
+                <label><i class="fab fa-tiktok icon"></i>TikTok:</label>
+                <input type="text" class="form-control" name="socials[tiktok]">
+            </div>
+            <div class="form-group">
+                <label><i class="fab fa-twitter icon"></i>Twitter:</label>
+                <input type="text" class="form-control" name="socials[twitter]">
+            </div>
+            <div class="form-group">
+                <label><i class="fab fa-bandcamp icon"></i>Bandcamp:</label>
+                <input type="text" class="form-control" name="socials[bandcamp]">
+            </div>
+            <div class="form-group">
+                <label><i class="fab fa-soundcloud icon"></i>SoundCloud:</label>
+                <input type="text" class="form-control" name="socials[soundcloud]">
+            </div>
+            <div class="form-group">
+                <label><i class="fab fa-youtube icon"></i>YouTube:</label>
+                <input type="text" class="form-control" name="socials[youtube]">
+            </div>
+            <div class="form-group">
+                <label><i class="fab fa-spotify icon"></i>Spotify:</label>
+                <input type="text" class="form-control" name="socials[spotify]">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
 </body>
 </html>
-'''
+"""

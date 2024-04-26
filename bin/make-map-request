@@ -1,0 +1,6 @@
+#!/bin/bash
+
+curl -X GET \
+-H 'X-Goog-User-Project: neon-rampart-312701' \
+-H 'Authorization: Bearer AIzaSyAhuMa8QI_bIRXS8z8b-ZmBAS5ZbDyjDe0' \
+https://mapsplatformdatasets.googleapis.com/v1/projects/PROJECT_NUMBER_OR_ID/datasets
